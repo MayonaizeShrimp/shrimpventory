@@ -10,15 +10,16 @@
       "inputs": ["production", "^production"],
       "outputs": ["{projectRoot}/dist"]
     },
-    "typecheck": {
+    "test": {
+      "cache": true,
+      "inputs": ["default"],
+      "outputs": ["{projectRoot}/coverage"]
+    },
+    "test:no-coverage": {
       "cache": true,
       "inputs": ["default"]
     },
-    "lint": {
-      "cache": true,
-      "inputs": ["default"]
-    },
-    "check": {
+    "lint:no-fix": {
       "cache": true,
       "inputs": ["default"]
     }
