@@ -6,6 +6,8 @@ const ROOT_DIR = fileURLToPath(new URL('../..', import.meta.url));
 
 export default defineConfig({
   root: ROOT_DIR,
+  // GitHub Pages serves the app from /<repo>/; the deploy workflow sets BASE_PATH.
+  base: process.env.BASE_PATH ?? '/',
   plugins: [react()],
   resolve: {
     alias: {
