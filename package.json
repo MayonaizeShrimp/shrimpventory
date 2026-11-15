@@ -11,7 +11,11 @@
     "dev": "vite --config configs/vite.config.ts",
     "build": "tsc -b && vite build --config configs/vite.config.ts",
     "preview": "vite preview --config configs/vite.config.ts",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "lint": "biome lint --config-path=configs .",
+    "format": "biome format --config-path=configs --write .",
+    "check": "biome check --config-path=configs .",
+    "check:fix": "biome check --config-path=configs --write ."
   },
   "nx": {
     "name": "shrimpventory"
@@ -21,6 +25,7 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.6.7",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",

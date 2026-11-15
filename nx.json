@@ -13,6 +13,14 @@
     "typecheck": {
       "cache": true,
       "inputs": ["default"]
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["default"]
+    },
+    "check": {
+      "cache": true,
+      "inputs": ["default"]
     }
   }
 }
