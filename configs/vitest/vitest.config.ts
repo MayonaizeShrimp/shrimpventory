@@ -1,5 +1,5 @@
 import { defineConfig, mergeConfig } from 'vitest/config';
-import viteConfig from './vite.config.ts';
+import viteConfig from '../vite/vite.config.ts';
 
 export default mergeConfig(
   viteConfig,
@@ -7,7 +7,7 @@ export default mergeConfig(
     test: {
       environment: 'jsdom',
       include: ['src/**/*.test.{ts,tsx}'],
-      setupFiles: ['configs/vitest.setup.ts'],
+      setupFiles: ['configs/vitest/vitest.setup.ts'],
       restoreMocks: true,
       coverage: {
         provider: 'v8',

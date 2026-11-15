@@ -1,12 +1,12 @@
 {
-  "$schema": "../node_modules/@biomejs/biome/configuration_schema.json",
+  "$schema": "../../node_modules/@biomejs/biome/configuration_schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["**", "!!**/dist", "!**/package-lock.json", "!!configs/biome.json"]
+    "includes": ["**", "!!**/dist", "!**/package-lock.json", "!!configs/biome/biome.json"]
   },
   "formatter": {
     "enabled": true,

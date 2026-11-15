@@ -1,5 +1,5 @@
 {
-  "biome.configurationPath": "configs/biome.json",
+  "biome.configurationPath": "configs/biome/biome.json",
   "editor.defaultFormatter": "biomejs.biome",
   "editor.formatOnSave": true,
   "files.eol": "\n",
