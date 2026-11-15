@@ -1,0 +1,27 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*"],
+    "production": ["default", "!{projectRoot}/**/*.test.{ts,tsx}"]
+  },
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "inputs": ["production", "^production"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "test": {
+      "cache": true,
+      "inputs": ["default"],
+      "outputs": ["{projectRoot}/coverage"]
+    },
+    "test:no-coverage": {
+      "cache": true,
+      "inputs": ["default"]
+    },
+    "lint:no-fix": {
+      "cache": true,
+      "inputs": ["default"]
+    }
+  }
+}
